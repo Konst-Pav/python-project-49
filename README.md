@@ -4,3 +4,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/0db0ca962bd1856f5413/maintainability)](https://codeclimate.com/github/Konst-Pav/python-project-49/maintainability)
 
 Brain-even https://asciinema.org/a/YDXnnJx8kMlAoDK68hK6T31Nx
+
+Brain-cal https://asciinema.org/a/X5cwJazQTf86A1YwKNtiqmD7H
