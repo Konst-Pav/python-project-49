@@ -32,7 +32,7 @@ def print_result(is_user_answer_correct, user_name, user_answer, task_answer):
         print('Correct!')
     else:
         print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{task_answer}'.")
-        print("Let's try again, {user_name}!")
+        print(f"Let's try again, {user_name}!")
 
 
 def print_game_over(user_name):
