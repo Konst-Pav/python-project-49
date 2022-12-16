@@ -27,11 +27,11 @@ def check_answer(user_answer, task_answer):
     return True if user_answer == str(task_answer) else False
 
 
-def print_result(is_user_answer_correct, user_name, user_answer, task_answer):
+def print_result(is_user_answer_correct, user_name, u_ans, t_ans):
     if is_user_answer_correct:
         print('Correct!')
     else:
-        print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{task_answer}'.")
+        print(f"'{u_ans}' is wrong answer ;(. Correct answer was '{t_ans}'.")
         print(f"Let's try again, {user_name}!")
 
 
