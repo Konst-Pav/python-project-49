@@ -6,15 +6,14 @@ def play_brain_game(gen_task, user_name, num_of_rounds):
     i = num_of_rounds
     while i > 0:
         task_answer = gen_task()
-        #print(f'!!! Answer {task_answer}')
+        # print(f'!!! Answer {task_answer}')
         user_answer = get_answer()
         result = check_answer(user_answer, task_answer)
         print_result(result, user_name, user_answer, task_answer)
-        if result == False:
+        if result is False:
             break
         i -= 1
         task_answer = 0
-        print(f'i = {i}')
     else:
         print_game_over(user_name)
 
