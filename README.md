@@ -27,11 +27,11 @@ ____
 - Poetry 1.2
 ____
 #### Команды Makefile
-**make build** — poetry build — команда для получения директории dist/ и пакетов для установки
-**make install** — poetry install
-**make brain-games** — poetry run brain-games
-**make publish** — poetry publish --dry-run — проверка готовности к публикации
-**make package-install** — python3 -m pip install --user dist/*.whl — установка программы
-**make package-reinstall** — python3 -m pip install --user --force-reinstall dist/*.whl — переустановка программы
-**make lint** — poetry run flake8 brain_games — проверка линтера flake8
+**make build** — poetry build — команда для получения директории dist/ и пакетов для установки  
+**make install** — poetry install  
+**make brain-games** — poetry run brain-games  
+**make publish** — poetry publish --dry-run — проверка готовности к публикации  
+**make package-install** — python3 -m pip install --user dist/*.whl — установка программы  
+**make package-reinstall** — python3 -m pip install --user --force-reinstall dist/*.whl — переустановка программы  
+**make lint** — poetry run flake8 brain_games — проверка линтера flake8 
 ____
