@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from brain_games import welcome_user
 from brain_games import game
-from brain_games.tasks.prime_task import gen_prime_task
+from brain_games.tasks.prime_task_game import gen_prime_task
 
 
 NUMBER_OF_ROUNDS = 3

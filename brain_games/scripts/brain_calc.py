@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from brain_games import welcome_user
 from brain_games import game
-from brain_games.tasks.calc_task import gen_calc_task
+from brain_games.tasks.calc_task_game import gen_calc_task
 
 
 NUMBER_OF_ROUNDS = 3

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from brain_games import welcome_user
 from brain_games import game
-from brain_games.tasks.gcd_task import gen_gcd_task
+from brain_games.tasks.gcd_task_game import gen_gcd_task
 
 
 NUMBER_OF_ROUNDS = 3

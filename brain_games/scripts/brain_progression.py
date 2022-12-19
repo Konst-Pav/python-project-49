@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from brain_games import welcome_user
 from brain_games import game
-from brain_games.tasks.progression_task import gen_progr_task
+from brain_games.tasks.progression_task_game import gen_progr_task
 
 
 NUMBER_OF_ROUNDS = 3
