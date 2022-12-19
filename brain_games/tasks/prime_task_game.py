@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from random import randint
 
 
@@ -6,11 +5,11 @@ MAX_NUM = 100
 
 
 def gen_prime_task():
-    r_int = randint(0, MAX_NUM)
+    random_number = randint(0, MAX_NUM)
     simple_num = simple_num_in_range(MAX_NUM)
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    print(f'Question: {r_int}')
-    return 'yes' if r_int in simple_num else 'no'
+    print(f'Question: {random_number}')
+    return 'yes' if random_number in simple_num else 'no'
 
 
 def simple_num_in_range(max):
