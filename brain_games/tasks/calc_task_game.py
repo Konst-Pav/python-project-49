@@ -17,11 +17,7 @@ def gen_calc_task():
 
 
 def calculate_expression(a, b, math_operation):
-    expression = {
-    '+': a + b,
-    '-': a - b,
-    '*': a * b
-    }
+    expression = {'+': a + b, '-': a - b, '*': a * b}
     if math_operation in expression:
         result = expression[math_operation]
     else:

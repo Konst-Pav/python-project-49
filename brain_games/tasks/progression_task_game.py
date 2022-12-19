@@ -6,10 +6,10 @@ MAX_NUM = 100
 
 
 def gen_progr_task():
-    random_start_progression = randint(MIN_NUM, MAX_NUM)
+    start_progression = randint(MIN_NUM, MAX_NUM)
     step = randint(1, 10)
     progression_length = randint(5, 10)
-    progression = gen_progression(random_start_progression, step, progression_length)
+    progression = gen_progression(start_progression, step, progression_length)
     index_missing_element = randint(0, len(progression) - 1)
     missing_element = progression[index_missing_element]
     progression[index_missing_element] = '..'
