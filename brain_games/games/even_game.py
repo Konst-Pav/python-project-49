@@ -8,14 +8,14 @@ GAME_RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 def generate_even_question():
     random_num = randint(MIN_NUM, MAX_NUM)
-    print(GAME_RULE)
-    print(f'Question: {random_num}')
     number_is_even = is_even(random_num)
     if number_is_even:
-        result = 'yes'
+        answer = 'yes'
     else:
-        result = 'no'
-    return result
+        answer = 'no'
+    question = random_num
+    question_and_answer = (question, answer)
+    return question_and_answer
 
 
 def is_even(number):

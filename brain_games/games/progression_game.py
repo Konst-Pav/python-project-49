@@ -19,9 +19,10 @@ def generate_progression_question():
     while i < len(progression):
         str_progression += str(progression[i]) + ' '
         i += 1
-    print(GAME_RULE)
-    print(f'Question: {str_progression}')
-    return missing_element
+    answer = missing_element
+    question = str_progression
+    question_and_answer = (question, answer)
+    return question_and_answer
 
 
 def gen_progression(start_progression, step, length):
