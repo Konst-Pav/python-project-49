@@ -2,6 +2,11 @@
 [![Actions Status](https://github.com/Konst-Pav/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/Konst-Pav/python-project-49/actions)    [![Maintainability](https://api.codeclimate.com/v1/badges/0db0ca962bd1856f5413/maintainability)](https://codeclimate.com/github/Konst-Pav/python-project-49/maintainability)
 
 ____
+#### Для запуска игр нужно
+- Python 3.10
+- Poetry 1.2
+____
+
 
 ### **Brain games**
 5 простых математических игр
@@ -20,11 +25,6 @@ ____
 - **Brain-prime** — является ли простым число
 [![asciicast](https://asciinema.org/a/XRMk73I0xaAPB3eAErs1XBMgX.svg)](https://asciinema.org/a/XRMk73I0xaAPB3eAErs1XBMgX)
 
-
-____
-#### Для запуска игр нужно
-- Python 3.10
-- Poetry 1.2
 ____
 #### Команды Makefile
 **make build** — poetry build — команда для получения директории dist/ и пакетов для установки  
