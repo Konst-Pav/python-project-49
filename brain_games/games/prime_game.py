@@ -2,35 +2,21 @@ from random import randint
 
 
 MAX_NUM = 100
+GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def generate_prime_question():
     random_number = randint(0, MAX_NUM)
-    simple_num = simple_num_in_range(MAX_NUM)
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    print(GAME_RULE)
     print(f'Question: {random_number}')
-    return 'yes' if random_number in simple_num else 'no'
+    return 'yes' if is_prime(random_number) else 'no'
 
 
-def simple_num_in_range(max):
-    simple_num = list_of_num(max)
-    i = 0
-    while i < len(simple_num):
-        y = i + 1
-        while y < len(simple_num):
-            res = simple_num[y] / simple_num[i]
-            if res == int(res):
-                simple_num.pop(y)
-            else:
-                y += 1
-        i += 1
-    return simple_num
-
-
-def list_of_num(max):
-    l_of_num = []
-    i = 2
-    while i <= max:
-        l_of_num.append(i)
-        i += 1
-    return l_of_num
+def is_prime(number):
+    if number <= 1:  # Negative numbers can't be prime
+        return False
+    # We divide the number by the range to the number itself
+    for i in range(2, number):
+        if number % i == 0:
+            return False
+    return True

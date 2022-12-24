@@ -4,14 +4,16 @@ from random import choice
 
 MIN_NUM = 1
 MAX_NUM = 10
+LIST_OF_OPERATORS = ['+', '-', '*']
+GAME_RULE = 'What is the result of the expression?'
 
 
 def generate_calc_question():
     random_num_1 = randint(MIN_NUM, MAX_NUM)
     random_num_2 = randint(MIN_NUM, MAX_NUM)
-    math_operation = choice(['+', '-', '*'])
+    math_operation = choice(LIST_OF_OPERATORS)
     result = calculate_expression(random_num_1, random_num_2, math_operation)
-    print('What is the result of the expression?')
+    print(GAME_RULE)
     print(f'Question: {random_num_1} {math_operation} {random_num_2}')
     return result
 

@@ -2,6 +2,7 @@ import prompt
 
 
 NUM_OF_ROUNDS = 3
+WRONG_ANSWER = 'is wrong answer ;(. Correct answer was'
 
 
 def play_brain_game(generate_task_func):
@@ -12,26 +13,12 @@ def play_brain_game(generate_task_func):
     while i > 0:
         task_answer = generate_task_func()
         user_answer = prompt.string('Your answer: ')
-        result = check_answer(user_answer, task_answer)
-        print_conclusion(result, user_name, user_answer, task_answer)
-        if result is False:
+        if user_answer == str(task_answer):
+            print('Correct!')
+        else:
+            print(f"'{user_answer}' {WRONG_ANSWER} '{task_answer}'.")
+            print(f"Let's try again, {user_name}!")
             break
         i -= 1
     else:
         print(f'Congratulations, {user_name}!')
-
-
-def check_answer(user_answer, task_answer):
-    return True if user_answer == str(task_answer) else False
-
-
-def print_conclusion(is_user_answer_correct, user_name, u_ans, t_ans):
-    if is_user_answer_correct:
-        print('Correct!')
-    else:
-        print(f"'{u_ans}' is wrong answer ;(. Correct answer was '{t_ans}'.")
-        print(f"Let's try again, {user_name}!")
-
-
-def print_game_over(user_name):
-    print(f'Congratulations, {user_name}!')

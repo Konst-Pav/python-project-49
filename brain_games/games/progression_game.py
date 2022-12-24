@@ -3,6 +3,7 @@ from random import randint
 
 MIN_NUM = 1
 MAX_NUM = 100
+GAME_RULE = 'What number is missing in the progression?'
 
 
 def generate_progression_question():
@@ -18,7 +19,7 @@ def generate_progression_question():
     while i < len(progression):
         str_progression += str(progression[i]) + ' '
         i += 1
-    print('What number is missing in the progression?')
+    print(GAME_RULE)
     print(f'Question: {str_progression}')
     return missing_element
 
