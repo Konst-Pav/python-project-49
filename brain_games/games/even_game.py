@@ -5,7 +5,7 @@ MIN_NUM = 1
 MAX_NUM = 100
 
 
-def gen_even_task():
+def generate_even_question():
     random_num = randint(MIN_NUM, MAX_NUM)
     print('Answer "yes" if the number is even, otherwise answer "no".')
     print(f'Question: {random_num}')

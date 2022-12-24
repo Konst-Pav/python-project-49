@@ -5,7 +5,7 @@ MIN_NUM = 1
 MAX_NUM = 100
 
 
-def gen_progr_task():
+def generate_progression_question():
     start_progression = randint(MIN_NUM, MAX_NUM)
     step = randint(1, 10)
     progression_length = randint(5, 10)

@@ -6,7 +6,7 @@ MIN_NUM = 1
 MAX_NUM = 10
 
 
-def gen_calc_task():
+def generate_calc_question():
     random_num_1 = randint(MIN_NUM, MAX_NUM)
     random_num_2 = randint(MIN_NUM, MAX_NUM)
     math_operation = choice(['+', '-', '*'])

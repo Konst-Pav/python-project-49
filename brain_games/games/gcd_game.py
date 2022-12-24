@@ -6,7 +6,7 @@ MIN_NUM = 1
 MAX_NUM = 100
 
 
-def gen_gcd_task():
+def generate_gcd_question():
     random_num_1 = randint(MIN_NUM, MAX_NUM)
     random_num_2 = randint(MIN_NUM, MAX_NUM)
     max_divisor = gcd(random_num_1, random_num_2)

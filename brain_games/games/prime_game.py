@@ -4,7 +4,7 @@ from random import randint
 MAX_NUM = 100
 
 
-def gen_prime_task():
+def generate_prime_question():
     random_number = randint(0, MAX_NUM)
     simple_num = simple_num_in_range(MAX_NUM)
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
