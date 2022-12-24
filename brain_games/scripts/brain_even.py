@@ -1,15 +1,10 @@
 #!/usr/bin/env python3
-from brain_games import welcome_user
-from brain_games import game
-from brain_games.tasks.even_task_game import gen_even_task
-
-
-NUMBER_OF_ROUNDS = 3
+from brain_games import game_starter
+from brain_games.games.even_game import generate_even_question
 
 
 def main():
-    user_name = welcome_user.get_user_name()
-    game.play_brain_game(gen_even_task, user_name, NUMBER_OF_ROUNDS)
+    game_starter.play_brain_game(generate_even_question)
 
 
 if __name__ == '__main__':
