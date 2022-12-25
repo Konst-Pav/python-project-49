@@ -6,16 +6,15 @@ MAX_NUM = 100
 GAME_RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def generate_even_question():
+def generate_task():
     random_num = randint(MIN_NUM, MAX_NUM)
     number_is_even = is_even(random_num)
     if number_is_even:
-        answer = 'yes'
+        correct_answer = 'yes'
     else:
-        answer = 'no'
+        correct_answer = 'no'
     question = random_num
-    question_and_answer = (question, answer)
-    return question_and_answer
+    return question, correct_answer
 
 
 def is_even(number):

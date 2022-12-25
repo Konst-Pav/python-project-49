@@ -6,7 +6,7 @@ MAX_NUM = 100
 GAME_RULE = 'What number is missing in the progression?'
 
 
-def generate_progression_question():
+def generate_task():
     start_progression = randint(MIN_NUM, MAX_NUM)
     step = randint(1, 10)
     progression_length = randint(5, 10)
@@ -19,10 +19,9 @@ def generate_progression_question():
     while i < len(progression):
         str_progression += str(progression[i]) + ' '
         i += 1
-    answer = missing_element
+    correct_answer = missing_element
     question = str_progression
-    question_and_answer = (question, answer)
-    return question_and_answer
+    return question, correct_answer
 
 
 def gen_progression(start_progression, step, length):

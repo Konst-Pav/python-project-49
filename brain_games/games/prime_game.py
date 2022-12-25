@@ -5,15 +5,14 @@ MAX_NUM = 100
 GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def generate_prime_question():
+def generate_task():
     random_number = randint(0, MAX_NUM)
     question = random_number
     if is_prime(random_number):
-        answer = 'yes'
+        correct_answer = 'yes'
     else:
-        answer = 'no'
-    question_and_answer = (question, answer)
-    return question_and_answer
+        correct_answer = 'no'
+    return question, correct_answer
 
 
 def is_prime(number):
