@@ -8,7 +8,7 @@ LIST_OF_OPERATORS = ['+', '-', '*']
 GAME_RULE = 'What is the result of the expression?'
 
 
-def generate_task():
+def generate_game():
     random_num_1 = randint(MIN_NUM, MAX_NUM)
     random_num_2 = randint(MIN_NUM, MAX_NUM)
     math_op = choice(LIST_OF_OPERATORS)

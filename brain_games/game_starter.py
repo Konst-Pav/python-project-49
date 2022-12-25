@@ -12,7 +12,7 @@ def play_brain_game(game_module):
     i = NUM_OF_ROUNDS
     print(game_module.GAME_RULE)
     while i > 0:
-        (quastion, answer) = game_module.generate_task()
+        quastion, answer = game_module.generate_game()
         print(f'Question: {quastion}')
         user_answer = prompt.string('Your answer: ')
         if user_answer == str(answer):
